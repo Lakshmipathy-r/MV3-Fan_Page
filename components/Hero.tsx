@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import ParticleBackground from "./ParticleBackground";
 
 export default function Hero() {
   const containerVariants = {
@@ -44,6 +45,9 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-dvh w-full flex-col items-center justify-center overflow-hidden bg-[#050505] px-4">
+      {/* Particle Background */}
+      <ParticleBackground />
+
       {/* Decorative background grid and neon accents */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-f1-red/10 via-transparent to-transparent opacity-60 pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0c0c0c_1px,transparent_1px),linear-gradient(to_bottom,#0c0c0c_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 pointer-events-none" />
