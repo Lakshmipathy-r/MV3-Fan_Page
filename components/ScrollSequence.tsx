@@ -44,7 +44,7 @@ export default function ScrollSequence() {
         return new Promise((resolve, reject) => {
           const img = new Image();
           const paddedIndex = String(index).padStart(3, "0");
-          img.src = `/sequence/ezgif-frame-${paddedIndex}.png`;
+          img.src = `/sequence/ezgif-frame-${paddedIndex}.webp`;
           
           img.onload = () => {
             loadedIndicesRef.current[index] = true;
